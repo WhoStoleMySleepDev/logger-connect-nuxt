@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/WhoStoleMySleepDev/logger-connect-nuxt/compare/v1.0.3...v1.0.4) (2026-03-04)
+
+
+### Bug Fixes
+
+* add keywords ([9a9c8ec](https://github.com/WhoStoleMySleepDev/logger-connect-nuxt/commit/9a9c8ec5dd0b068ac9ceb1ea94e68451230be888))
+
 ## [1.0.3](https://github.com/WhoStoleMySleepDev/logger-connect-nuxt/compare/v1.0.2...v1.0.3) (2026-03-04)
 
 
