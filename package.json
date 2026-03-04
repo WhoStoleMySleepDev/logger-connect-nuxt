@@ -1,6 +1,6 @@
 {
   "name": "@wsms/logger-connect-nuxt",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Nuxt connector for @wsms/logger",
   "type": "module",
   "main": "dist/index.js",
