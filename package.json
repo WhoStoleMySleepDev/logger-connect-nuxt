@@ -14,6 +14,20 @@
       "default": "./dist/index.js"
     }
   },
+  "keywords": [
+    "nuxt",
+    "nuxt3",
+    "nuxt4",
+    "nuxt-module",
+    "logging",
+    "logger",
+    "typescript",
+    "file-logger",
+    "nitro"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
   "files": [
     "dist"
   ],
