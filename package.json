@@ -1,0 +1,47 @@
+{
+  "name": "@wsms/logger-connect-nuxt",
+  "version": "0.1.0",
+  "description": "Nuxt connector for @wsms/logger",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint": "biome lint src/**/*.ts",
+    "lint:fix": "biome lint --write src/**/*.ts",
+    "format": "biome format --write src/**/*.ts",
+    "format:check": "biome format src/**/*.ts",
+    "prepublishOnly": "npm run build && npm run lint"
+  },
+  "dependencies": {
+    "@nuxt/kit": "^3.19.0",
+    "@nuxt/schema": "^3.19.0",
+    "@wsms/logger": "^1.2.0"
+  },
+  "peerDependencies": {
+    "nuxt": "^3.0.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.4.5",
+    "@types/node": "^25.3.3",
+    "nuxt": "^3.21.1",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3"
+  }
+}
