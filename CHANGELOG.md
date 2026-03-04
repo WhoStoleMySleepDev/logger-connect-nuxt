@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/WhoStoleMySleepDev/logger-connect-nuxt/compare/v1.0.1...v1.0.2) (2026-03-04)
+
+
+### Bug Fixes
+
+* retrigger release ([8332104](https://github.com/WhoStoleMySleepDev/logger-connect-nuxt/commit/8332104de0b828d922201ba34d1edbb1b3f4f9c2))
+
 ## [1.0.1](https://github.com/WhoStoleMySleepDev/logger-connect-nuxt/compare/v1.0.0...v1.0.1) (2026-03-04)
 
 
