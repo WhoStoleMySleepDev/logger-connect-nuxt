@@ -20,6 +20,12 @@
   "engines": {
     "node": ">=18.0.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/WhoStoleMySleepDev/logger-connect-nuxt"
+  },
+  "author": "whostolemysleep",
+  "license": "MIT",
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
@@ -27,7 +33,14 @@
     "lint:fix": "biome lint --write src/**/*.ts",
     "format": "biome format --write src/**/*.ts",
     "format:check": "biome format src/**/*.ts",
+    "prepare": "husky",
     "prepublishOnly": "npm run build && npm run lint"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "biome lint --write",
+      "biome format --write"
+    ]
   },
   "dependencies": {
     "@nuxt/kit": "^3.19.0",
@@ -39,8 +52,19 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^2.4.5",
+    "@commitlint/cli": "^20.4.2",
+    "@commitlint/config-conventional": "^20.4.2",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/commit-analyzer": "^13.0.1",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^12.0.6",
+    "@semantic-release/npm": "^13.1.5",
+    "@semantic-release/release-notes-generator": "^14.1.0",
     "@types/node": "^25.3.3",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.3.1",
     "nuxt": "^3.21.1",
+    "semantic-release": "^25.0.3",
     "tsup": "^8.5.1",
     "typescript": "^5.9.3"
   }
